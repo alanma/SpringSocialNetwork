@@ -4,11 +4,10 @@ Tatami
 Presentation
 ------------------
 
-Tatami is an Open Source enterprise social network.
+Open Source enterprise social network.
 
-A publicly installed version of Tatami is provided by [Ippon Technologies](http://www.ippon.fr) at : [https://tatami.ippon.fr](https://tatami.ippon.fr)
 
-Tatami is made with the following technologies :
+Project made with the following technologies :
 
 - HTML5, [Backbone.js](http://backbonejs.org/) and [Twitter Bootstrap](http://twitter.github.com/bootstrap/)
 - [The Spring Framework](http://www.springsource.org/)
@@ -16,17 +15,15 @@ Tatami is made with the following technologies :
 - [Apache Lucene](http://lucene.apache.org/core/)
 - [Elastic Search](http://www.elasticsearch.org/) (optional add-on, as a replacement for Lucene)
 
-Tatami is developped by [Ippon Technologies](http://www.ippon.fr)
-
 Current build status is available on [BuildHive](https://buildhive.cloudbees.com/job/ippontech/job/tatami/) : [![Build Status](https://buildhive.cloudbees.com/job/ippontech/job/tatami/badge/icon)](https://buildhive.cloudbees.com/job/ippontech/job/tatami/)
 
 Tatami Bot
 -----------------
 
-The Tatami Bot is an optional software, which fetches data over your company's Intranet and on the Internet, and aggregates
-this data on Tatami.
+This is an optional software, which fetches data over your company's Intranet and on the Internet, and aggregates
+this data.
 
-More information on the [Tatami Bot homepage](https://github.com/ippontech/tatami-bot).
+
 
 Installation for developpers
 ---------------------------------------
@@ -59,10 +56,6 @@ If you want to debug remotely the application with your IDE, set up your MAVEN_O
 export MAVEN_OPTS="$MAVEN_OPTS -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n"
 ```
 
-### Cassandra troubleshooting
-
-On Mac OS X, you should use JDK 6 and not JDK 7, see [issue #281](https://github.com/ippontech/tatami/issues/281#issuecomment-12430701).
-
 Installation for production use
 ---------------------------------------
 
@@ -72,7 +65,7 @@ Installation for production use
 - Install Cassandra : the application will work fine with just one node, but ideally you should have a cluster with at least 3 or 5 nodes
 - Cassandra is configured with its cassandra.yaml file : don't forget to backup your "data" and "commitlog" directories
 
-### Tatami installation
+### installation
 
 In order to use a stable version, use one of the [available tags](https://github.com/ippontech/tatami/tags).
 
@@ -83,7 +76,7 @@ Tatami can be configured with the src/main/resources/META-INF/tatami/tatami.prop
 
 Once Tatami is started, you will be able to check your properties at runtime in the Administration page.
 
-To deploy Tatami :
+To deploy :
 
 - Create the Tatami WAR file : `mvn package`
 - The WAR file will be called "root.war", as Tatami should be run as the root application (on the "/" Web context)
@@ -164,19 +157,3 @@ Java and .NET applications. Take a look at YourKit's leading software products:
 [YourKit Java Profiler](http://www.yourkit.com/java/profiler/index.jsp) and
 [YourKit .NET Profiler](http://www.yourkit.com/.net/profiler/index.jsp).
 
-License
--------
-
-Copyright 2012 [Ippon Technologies](http://www.ippon.fr)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this application except in compliance with the License.
-You may obtain a copy of the License at
-
-[http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
