@@ -1,6 +1,3 @@
-Tatami
-================
-
 Presentation
 ------------------
 
@@ -15,7 +12,6 @@ Project made with the following technologies :
 - [Apache Lucene](http://lucene.apache.org/core/)
 - [Elastic Search](http://www.elasticsearch.org/) (optional add-on, as a replacement for Lucene)
 
-Current build status is available on [BuildHive](https://buildhive.cloudbees.com/job/ippontech/job/tatami/) : [![Build Status](https://buildhive.cloudbees.com/job/ippontech/job/tatami/badge/icon)](https://buildhive.cloudbees.com/job/ippontech/job/tatami/)
 
 Tatami Bot
 -----------------
@@ -67,7 +63,7 @@ Installation for production use
 
 ### installation
 
-In order to use a stable version, use one of the [available tags](https://github.com/ippontech/tatami/tags).
+
 
 Tatami can be configured with the src/main/resources/META-INF/tatami/tatami.properties file. You can configure this file in 2 ways :
 
