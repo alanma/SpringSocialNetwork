@@ -13,14 +13,6 @@ Project made with the following technologies :
 - [Elastic Search](http://www.elasticsearch.org/) (optional add-on, as a replacement for Lucene)
 
 
-Tatami Bot
------------------
-
-This is an optional software, which fetches data over your company's Intranet and on the Internet, and aggregates
-this data.
-
-
-
 Installation for developpers
 ---------------------------------------
 
